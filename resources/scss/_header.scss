@@ -1,0 +1,26 @@
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-ul {
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a.active {
+    color: blue;
+}
