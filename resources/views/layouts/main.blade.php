@@ -9,6 +9,9 @@
 
     <link rel="icon" href="{{ asset('images/dc-logo.png') }}" type="images/png">
     @vite('resources/js/app.js')
+
+    {{-- CDNS --}}
+    @yield('cdns')
 </head>
 
 <body>
@@ -20,6 +23,9 @@
     </main>
     {{-- FOOTER --}}
     @include('includes.footer')
+
+    {{-- SCRIPTS --}}
+    @yield('scripts')
 </body>
 
 </html>
