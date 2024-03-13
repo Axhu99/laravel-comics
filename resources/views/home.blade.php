@@ -3,5 +3,5 @@
 @section('title', 'HOME')
 
 @section('main-content')
-    <h3>BENVENUTO ALLA NOSTRA PAGINA DI FUMETTI</h3>
+    <h2>BENVENUTO ALLA NOSTRA PAGINA DI FUMETTI</h2>
 @endsection
