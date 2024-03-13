@@ -8,12 +8,11 @@
 .navbar-ul {
     display: flex;
     gap: 10px;
-}
 
-li {
-    list-style-type: none;
-    text-transform: uppercase;
-    font-weight: bold;
+    li {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }
 
 a.active {

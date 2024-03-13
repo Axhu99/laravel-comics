@@ -1,7 +1,13 @@
+@use 'style.scss' as *;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
 }
 
 img {
@@ -11,4 +17,13 @@ img {
 a {
     color: #000;
     text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
