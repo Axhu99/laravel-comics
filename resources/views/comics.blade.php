@@ -9,14 +9,16 @@
             <h1>current series</h1>
         </section>
         <div class="row">
-            @foreach ($cards as $card)
+            @foreach ($cards as $index => $card)
                 <div class="col">
-                    <figure>
-                        <img src="{{ $card['thumb'] }}" alt="{{ $card['title'] }}">
-                        <figcaption class="comic-title">
-                            <h3>{{ $card['title'] }}</h3>
-                        </figcaption>
-                    </figure>
+                    <a href="{{ url("/comic/$index") }}">
+                        <figure>
+                            <img src="{{ $card['thumb'] }}" alt="{{ $card['title'] }}">
+                            <figcaption class="comic-title">
+                                <h3>{{ $card['title'] }}</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             @endforeach
         </div>

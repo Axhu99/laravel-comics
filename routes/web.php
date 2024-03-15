@@ -23,3 +23,9 @@ Route::get('comics', function () {
 
     return view('comics', compact('cards'));
 })->name('comics');
+
+Route::get('/comic/{index}', function ($index) {
+    $comics = config('comics');
+
+    return view('comic', ['comic' => $comics[$index]]);
+})->name('comic');
